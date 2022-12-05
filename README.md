@@ -18,5 +18,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: sample
-        uses: shibuiwilliam/sample-actions@v1
+        uses: shibuiwilliam/shibui-sample-action@v1
 ```
