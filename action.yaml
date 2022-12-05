@@ -1,0 +1,18 @@
+name: "shibui-sample-action"
+description: "sample action"
+author: "shibuiwilliam"
+inputs:
+  python_version:
+    required: false
+    description: "Python version. Default 3.10"
+    default: "3.10"
+runs:
+  using: "composite"
+  steps:
+    - name: Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ inputs.python_version }}
+    - id: hello
+      shell: bash
+      run: echo "hello"
